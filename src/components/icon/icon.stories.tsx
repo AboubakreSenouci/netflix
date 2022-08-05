@@ -12,7 +12,7 @@ export default {
 export const Story: ComponentStory<typeof Icon> = () => {
   const { icons } = iconSet;
   return (
-    <div className="w-screen flex flex-wrap gap-x-5 gap-y-5 p-4 bg-slate-500">
+    <div className="w-screen flex flex-wrap gap-x-5 gap-y-5 p-4 bg-slate-500 ">
       {
         icons.map((icon) => {
           return (
