@@ -24,7 +24,7 @@ const Button : React.FC<ButtonProps> = (props) => {
     )
     return(
         <button className={c}>
-            <Icon icon={icon} className='mr-2'/>
+            <Icon icon={icon as IconTypes}className='mr-2'/>
             {children}
         </button>
     )
