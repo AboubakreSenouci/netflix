@@ -1,5 +1,4 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import React from 'react';
 import iconSet from "../../assets/icons/selection.json";
 import Icon from './icon';
 import IconTypes from './icon.types';

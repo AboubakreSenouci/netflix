@@ -1,4 +1,4 @@
-type IconTypes = 'search' | 'play' | 'notification' | 'facebook' | 'instgram' | 'twitter' | 'caret-down'
-  | 'caret-left' | 'caret-right';
+type IconTypes = 'search' | 'play' | 'notification' | 'facebook' | 'instagram' | 'twitter' | 'caret-down'
+  | 'caret-left' | 'caret-right' | 'gift-box' | 'youtube';
 
 export default IconTypes;
