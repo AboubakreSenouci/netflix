@@ -5,6 +5,10 @@ module.exports = {
     "../src/**/*.stories.tsx",
   ],
   theme: {
+    screens: {
+      'md': {'max' : '1100px'},
+      'xl': {'min' : '1100px'},
+    },
     extend: {
       colors: {
         red: "#B9090B",

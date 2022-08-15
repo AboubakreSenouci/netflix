@@ -9,7 +9,7 @@ interface IconProps extends Omit<IcomoonProps, 'icon'> {
 }
 
 const Icon: React.FC<IconProps> = (props) => {
-  const defaultSize = props.size ?? 16;
+  const defaultSize = props.size ?? 20;
   return <IcoMoon iconSet={iconSet} size={defaultSize} {...props} />
 }
 
