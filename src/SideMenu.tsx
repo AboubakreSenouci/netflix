@@ -6,11 +6,11 @@ import Icon from "./components/icon/icon";
 import logo from "./netflixLogo.png";
 
  interface sideMenuProps  {
-    setSideMenu : (sideMenu : boolean) => void,
+    setIsideMenuOpen : (isOpen : boolean) => void,
 }
 
 
-const  SideMenu: React.FC<sideMenuProps> = ({setSideMenu}) =>
+const  SideMenu: React.FC<sideMenuProps> = ({setIsideMenuOpen}) =>
 {
     const element =[
         {name: 'Home', link: '/'},
@@ -23,8 +23,10 @@ const  SideMenu: React.FC<sideMenuProps> = ({setSideMenu}) =>
 
     return(
         <div className="bg-black min-h-max w-full">
-            <img className='h-14 p-4 mx-6' src={logo} alt="image"/>
-            <button className='absolute top-3 right-6 text-3xl text-white xl:hidden' onClick={() => setSideMenu(false)}><GiHamburgerMenu/></button>
+            <img className='h-14 p-4 mx-6' src={logo} alt={"netflix"} />
+            <button className='absolute top-3 right-6 text-3xl text-white xl:hidden' onClick={() => setIsideMenuOpen(false)}>
+                <GiHamburgerMenu/>
+            </button>
             <div className="rounded-2xl pt-20 pl-12">
             {isOpen && <input className='text-black border-none outline-none px-2 cursor-pointer rounded-2xl' placeholder="Type to Search..." 
                   onDoubleClick={() => setIsOpen(false)}/>}

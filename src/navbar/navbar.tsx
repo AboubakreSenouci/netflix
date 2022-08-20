@@ -24,13 +24,12 @@ const Navbar : React.FC<{}> = (props) => {
    
     
     if(sideMenu){
-        const obj ={setSideMenu:{setSideMenu}}
-        return <SideMenu setSideMenu={setSideMenu}/>
+        return <SideMenu setIsideMenuOpen={setSideMenu}/>
     }
     return(
         <div className="flex justify-between bg-black text-white">
             <div className='flex'>
-                <img className='h-14 p-4 mx-6' src={logo} alt="image"/>
+                <img className='h-14 p-4 mx-6' src={logo} alt={"netflix"} />
                 <div className='space-x-10 p-4 text-xl md:hidden'>
                     {element.map((elem, index) => (
                         <Link to="" className={` cursor-pointer tracking-wider ${index === value && "font-bold"}`}
@@ -52,7 +51,7 @@ const Navbar : React.FC<{}> = (props) => {
                 <Link to=''><Icon icon={'notification'}/></Link>
                <div className='grid'>
                 <div className='flex space-x-2'>
-                    <img className='h-8' src={picture1} alt="profile picture"/>
+                    <img className='h-8' src={picture1} alt="profile"/>
                     <button onClick={() => setIsOptionOpen(!isOptionOpen)}><Icon icon={'caret-down'}/></button>
                 </div>
                     {isOptionOpen && 
